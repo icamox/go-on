@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context="worldprogramming.myapp.Login"
+    android:background="#5addf4">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GO ON"
+            android:layout_gravity="center"
+            android:textColor="#000"
+            android:textSize="30sp"
+            android:textStyle="bold"/>
+        
+        <EditText
+            android:id="@+id/etuser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="User"
+            android:textColorHint="#000"
+            android:drawableLeft="@drawable/ic_action_user"/>
+
+        <EditText
+            android:id="@+id/etpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="#000"
+            android:drawableLeft="@drawable/ic_lock"
+            android:inputType="textPassword"/>
+
+        <RadioButton
+            android:id="@+id/RBSesion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="No cerrar sesión"/>
+
+        <Button
+            android:id="@+id/btingresar"
+            android:theme="@style/BotonColores"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:hint="Login"
+            android:textColorHint="#fff"
+            android:textSize="18sp"
+            android:drawableLeft="@drawable/ic_action_key"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:hint="No tengo un usuario"
+        android:background="@android:color/transparent"
+        android:textColorHint="#000"/>
+
+</RelativeLayout>

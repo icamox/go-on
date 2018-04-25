@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5addf4"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGISTRO"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/userRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Usuario: "
+        android:textColorHint="#000"
+        android:paddingBottom="10dp"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/PasswordRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Contraseña: "
+        android:textColorHint="#000"
+        android:paddingBottom="10dp"
+        android:inputType="textPassword"/>
+    <EditText
+        android:id="@+id/NombreRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre: "
+        android:textColorHint="#000"
+        android:paddingBottom="10dp"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/ApellidoRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Apellido: "
+        android:textColorHint="#000"
+        android:paddingBottom="10dp"
+        android:inputType="text"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/DiaRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Dia: "
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/MesRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mes: "
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:inputType="number"/>
+        <EditText
+            android:id="@+id/YearRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Año: "
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/CorreoRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail: "
+        android:textColorHint="#000"
+        android:paddingBottom="10dp"
+        android:inputType="textEmailSubject"/>
+    <EditText
+        android:id="@+id/NumeroRegistro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Celular: "
+        android:textColorHint="#000"
+        android:paddingBottom="10dp"
+        android:inputType="number"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <RadioButton
+            android:id="@+id/RBHombre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Hombre"
+            android:paddingRight="20sp"
+            android:checked="true"/>
+        <RadioButton
+            android:id="@+id/RBMujer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mujer"
+            android:paddingLeft="5sp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/BotonRegistro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Registrar"
+        android:textColorHint="#fff"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/ic_action_key"
+        android:theme="@style/BotonColores"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
